@@ -1,0 +1,126 @@
+:root{
+    --cor-de-fundo: #030303;
+    --cor-de-texto: #F1EFEC;
+    --cor-de-marcacao: #123458;
+    --cor-do-houver: grey;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+.cabecalho{   
+padding: 2% 0 0 15%;
+}
+.cabecalho__links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+}
+.cabecalho__links__link{
+    color: var(--cor-de-marcacao);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.fonte{
+    color: var(--cor-de-texto);
+    width: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.numero1 {
+    color: var(--cor-de-marcacao);
+    border:1px solid var(--cor-de-marcacao);
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+h2 {
+    color: var(--cor-do-houver);
+}
+.paragrafo {
+    color: var(--cor-de-marcacao);
+    font-size: 1.25rem;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h3 {
+    color: var(--cor-de-texto);
+    border: 1px solid var(--cor-de-marcacao);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+    padding: 7px;
+}
+.stilo {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-de-marcacao);
+    box-sizing: border-box;
+    width: 175px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: var(--cor-de-texto);
+    text-decoration: none;
+}
+.imagem {
+    border:3px solid var(--cor-de-marcacao);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor-de-texto);
+    width: 50%;
+}
+.stilo:hover{
+background-color: var(--cor-do-houver);
+width: 200px;
+padding: 10px;
+}
+.pe{
+    background-color: var(--cor-de-marcacao);
+    padding: 10px;
+    color: var(--cor-de-texto);
+    text-align: center;
+    font-size: 1.25rem;
+}
+.stilo__sobre{
+    background-color: var(--cor-de-fundo);
+    color: #22D4FD;
+}
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 5%;
+    }
+    .cabecalho__links{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteudo{
+        width: auto;
+    }
+}
